@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    --orange:#b46129;
+    --white:#ffffff;
+}
+/* general */
+.debugger{
+    border: 1px solid red;
+}
+.container{
+    width: 1200px;
+    margin:0 auto;
+}
+ul{
+    list-style: none;
+}
+li{
+    padding: 10px;
+}
+/* flex.utility */
+.d-flex{
+    display: flex;
+}
+/* header */
+header{
+    color: var(--white);
+}
+.bg-orange{
+    background-color: var(--orange);
+}
+.header-flex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-flex img{
+    width: 100%;
+    display: block;
+    height: 50px;
+}
+/* main */
+
+/* footer */
