@@ -73,7 +73,9 @@ li {
 .dir-col {
     flex-direction: column;
 }
-
+.spa-bet{
+    justify-content: space-between;
+}
 /* position utility */
 .pos-rel {
     position: relative;
@@ -84,6 +86,9 @@ body{
 }
 /* header */
 header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
     color: var(--white);
     height: var(--padding-space-header);
     border-bottom: 2px solid rgb(0, 0, 0, .2);
@@ -105,7 +110,9 @@ header {
 
 /* main */
 main {
-    padding: var(--padding-space-main);
+    /* padding: var(--padding-space-main); */
+    padding-top: 125px;
+    padding-bottom: var(--padding-space-main);
 }
 
 .main-flex {
@@ -117,8 +124,26 @@ main {
 .panel {
     width: calc((100% - 40px) / 3);
 }
+.img-panel{
+    position: relative;
+}
 .img-panel img {
     width: 100%;
+    /* display: block; */
+}
+.img-panel:hover .heart-logo{
+    color: red;
+}
+.show-img{
+    display: block;
+}
+.hide-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.img-panel:hover .hide-img{
     display: block;
 }
 .txt-panel{
@@ -172,10 +197,7 @@ main {
     font-size: .9em;
 }
 #sus-different{
-    height: 25px;
-    width: 100px;
     left: var(--left-disc);
-    bottom: var(--bot-sus-disc);
 }
 .sustainability-txt {
     color: var(--white);
@@ -191,6 +213,7 @@ main {
 
 .txt-crossed {
     text-decoration: line-through;
+    font-weight: 400;
 }
 
 /* footer */
@@ -216,9 +239,6 @@ footer {
     font-size: .8em;
     font-weight: 400;
 }
-/* test */
-.box {
-    background-color: var(--green);
-    height: 110%;
-    width: 100%;
+.boolando-srl{
+    padding-left: 5px;
 }
