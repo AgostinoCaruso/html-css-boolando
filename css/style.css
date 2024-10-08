@@ -8,15 +8,19 @@
     --orange:#FF6900;
     --white:#ffffff;
     --dark:#1A1A1A;
+    --red:#FF0000;
+    --green:#008000;
     /* px */
     --padding-space-header:60px;
     --padding-space-main:50px;
     --padding-space-footer:30px;
+    /* font */
+    --font-med-bold:800;
 }
 /* general */
-.debugger{
+/* .debugger{
     border: 1px solid red;
-}
+} */
 .container{
     width: 1400px;
     margin:0 auto;
@@ -31,23 +35,36 @@ ul{
 li{
     padding: 10px;
 }
+/* font utility */
+.font-bold{
+    font-weight: var(--font-med-bold);
+}
+/* background color */
 .bg-orange{
     background-color: var(--orange);
 }
 .bg-dark{
     background-color: var(--dark);
 }
-/* flex.utility */
+/* flex utility */
 .d-flex{
     display: flex;
 }
+.justcont-cen{
+    justify-content: center;
+}
 .dir-col{
     flex-direction: column;
+}
+/* position utility */
+.pos-rel{
+    position: relative;
 }
 /* header */
 header{
     color: var(--white);
     height: var(--padding-space-header);
+    border-bottom: 2px solid var(--dark);
 }
 
 .header-flex{
@@ -68,13 +85,65 @@ main{
 .main-flex{
     display: flex;
     gap: 20px;
-    /* width: calc((100%-10px)/3); */
 }
 .panel{
     width: calc((100% - 40px) / 3);
 }
 .img-panel img{
     width: 100%;
+    display: block;
+}
+.heart-pos{
+    background-color: var(--white);
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top:10px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heart-logo{
+    font-size: 2em;
+}
+.discount-pos{
+    background-color: var(--red);
+    height: 25px;
+    width: 50px;
+    left: 0px;
+    bottom:35px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.discount-logo{
+    color: white;
+    font-size: .9em;
+}
+.sustainability-pos{
+    background-color: var(--green);
+    height: 25px;
+    width: 100px;
+    left: 55px;
+    bottom:35px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sustainability-txt{
+    color: var(--white);
+}
+.middle-txt-panel{
+    text-transform: uppercase;
+}
+.txt-red{
+    color: var(--red);
+}
+.txt-crossed{
+    text-decoration: line-through;
 }
 /* footer */
 footer{
@@ -89,7 +158,7 @@ footer{
 }
 /* test */
 .box{
-    background-color: green;
+    background-color: var(--green);
     height: 110%;
     width: 100%;
 }
