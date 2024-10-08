@@ -93,16 +93,18 @@ main{
     width: 100%;
     display: block;
 }
+.generic-badge{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .heart-pos{
     background-color: var(--white);
     height: 50px;
     width: 50px;
-    position: absolute;
     top:10px;
     right: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .heart-logo{
     font-size: 2em;
@@ -113,10 +115,6 @@ main{
     width: 50px;
     left: 0px;
     bottom:35px;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .discount-logo{
     color: white;
@@ -128,10 +126,6 @@ main{
     width: 100px;
     left: 55px;
     bottom:35px;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .sustainability-txt{
     color: var(--white);
